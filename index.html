@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signature</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+    <div class="top">
+      <div class="textcolor">
+        Text Color
+        
+        <input type="color" id="textcolor" />
+      </div>
+      <div class="textcolor">
+        Background color
+        
+        <input type="color" id="bgcolor" />
+      </div>
+      <div class="fontsize">
+        Font Size
+        
+        <select name="" id="fontsize">
+          <option value="5">5px</option>
+          <option value="10">10px</option>
+          <option value="15">15px</option>
+          <option value="20">20px</option>
+        </select>
+      </div>
+    </div>
+    <canvas class="canvas" height="400" width="600"></canvas>
+    <div class="bottom">
+      <button type="button" class="btn clear">Clear</button>
+      <button type="button" class="btn download">Download Sign</button>
+      <button type="button" class="btn retrieve">Retrieve Last Signature</button>
+    </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
