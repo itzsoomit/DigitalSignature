@@ -59,8 +59,8 @@ canvas.addEventListener('touchstart', (e) => {
     e.preventDefault();
     isDrawing = true;
     const pos = getEventPosition(e);
-    lastX = event.offsetX;
-    lastY = event.offsetY;
+    lastX = pos.x;
+    lastY = pos.y;
 });
 
 canvas.addEventListener('touchmove', (e) => {
@@ -71,8 +71,8 @@ canvas.addEventListener('touchmove', (e) => {
         ctx.moveTo(lastX, lastY);
         ctx.lineTo(pos.x, pos.y);
         ctx.stroke();
-        lastX = event.offsetX;
-        lastY = event.offsetY;
+        lastX = pos.x;
+        lastY = pos.y;
     }
 });
 
